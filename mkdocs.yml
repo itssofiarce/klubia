@@ -1,0 +1,36 @@
+site_name: klub-ia
+
+
+theme:
+  name: shadcn
+  show_title: true # show the title in the top bar
+  show_stargazers: true # show the stargazers in the top bar
+  pygments_style: # default styles 
+        light: blinds-light
+        dark: gruvbox-dark
+  icon: heroicons:rocket-launch # use the shadcn svg if not defined
+  topbar_sections: false # NEW!
+  order: 2 
+  sidebar_title: Navigation title
+
+
+# mkdocs.yml
+
+markdown_extensions:
+  - admonition
+ # - attr_list to be used in the home page maybe?
+  - codehilite
+  - shadcn.extensions.echarts.alpha
+  - pymdownx.blocks.details
+  - toc:
+      permalink: true # Adds a permalink to each heading
+      title: Tabla de contenidos # Sets a title for the TOC
+      toc_depth: 3 # Includes H1, H2, and H3 headings
+
+
+plugins:
+  search:
+  excalidraw:
+    directory: assets/excalidraw
+
+

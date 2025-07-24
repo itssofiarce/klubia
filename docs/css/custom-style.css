@@ -1,0 +1,104 @@
+/* docs/css/bento-grid.css */
+
+/* --- Sidebar Hiding (works for both themes as it directly hides the element) --- */
+[data-slot="sidebar-content"] {
+  display: none !important;
+}
+
+/* --- Bento Grid Container (General styles, no specific dark mode changes needed here usually) --- */
+.bento-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 16px;
+    padding: 20px 0;
+}
+
+/* --- Bento Grid Item (General and Dark Mode adjustments) --- */
+.bento-grid-item {
+    background-color: var(--md-code-bg-color, #f3f4f6); /* Light mode background fallback */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light mode shadow */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+/* Dark mode overrides for bento grid items */
+html.dark .bento-grid-item,
+body.dark .bento-grid-item {
+    background-color: var(--md-code-bg-color--dark, #2d333b); /* Dark mode background fallback */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Darker shadow for dark mode */
+}
+
+.bento-grid-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Light mode hover shadow */
+}
+
+html.dark .bento-grid-item:hover,
+body.dark .bento-grid-item:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); /* Dark mode hover shadow */
+}
+
+
+/* --- Headings (H3) --- */
+.bento-grid-item h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: xx-large !important; 
+    color: var(--md-accent-fg-color, #333); /* Light mode accent color fallback */
+}
+
+/* Dark mode font color for H3 */
+html.dark .bento-grid-item h3,
+body.dark .bento-grid-item h3 {
+    color: var(--md-accent-fg-color--dark, #a3b3c3); /* Lighter accent color for dark mode headings */
+}
+
+
+/* --- Paragraphs --- */
+.bento-grid-item p {
+    font-size: 0.95em;
+    line-height: 1.6;
+    color: var(--md-default-fg-color, #555); /* Light mode default text color fallback */
+}
+
+/* Dark mode font color for Paragraphs */
+html.dark .bento-grid-item p,
+body.dark .bento-grid-item p {
+    color: var(--md-default-fg-color--dark, #c3cfda); /* Lighter default text color for dark mode */
+}
+
+
+/* --- Links (A) --- */
+.bento-grid-item a {
+    margin-top: 15px;
+    align-self: flex-start;
+    color: var(--md-accent-fg-color, #007bff); /* Light mode accent color fallback for links */
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Dark mode font color for Links */
+html.dark .bento-grid-item a,
+body.dark .bento-grid-item a {
+    color: var(--md-accent-fg-color--dark, #87ceeb); /* Lighter accent color for dark mode links (a bit brighter for contrast) */
+}
+
+
+.bento-grid-item a:hover {
+    text-decoration: underline;
+}
+
+/* --- Specific Grid Layouts (Optional, no dark mode specific changes usually needed) --- */
+@media (min-width: 768px) {
+    .bento-grid-item.span-2-cols {
+        grid-column: span 2;
+    }
+    .bento-grid-item.span-2-rows {
+        grid-row: span 2;
+    }
+}
