@@ -20,7 +20,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install mkdocs shadcn
+          pip install mkdocs mkdocs-shadcn
 
       - name: Build MkDocs site
         run: |
