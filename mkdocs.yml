@@ -1,5 +1,6 @@
 site_name: klub-ia
 
+site_url: https://itssofiarce.github.io/klubia/
 use_directory_urls: true
 
 theme:
