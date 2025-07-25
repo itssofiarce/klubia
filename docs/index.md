@@ -32,7 +32,7 @@ Este repositorio esta destinado a explicar papers, artículos y otras novedades 
 
     <div class="bento-grid-item">
         <h3 class="header-grid">Procesamiento del Lenguaje Natural</h3>
-        <a href="https://github.com/mkdocs/mkdocs/discussions" target="_blank">Leer mas...</a>
+        <a href="computer-vision/segment-anything-model.md" target="_blank">Leer mas...</a>
     </div>
 </div>
 
