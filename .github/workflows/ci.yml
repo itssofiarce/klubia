@@ -24,7 +24,7 @@ jobs:
 
       - name: Build MkDocs site
         run: |
-          mkdocs gh-deploy
+          mkdocs build
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
