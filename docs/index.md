@@ -27,7 +27,7 @@ Este repositorio esta destinado a explicar papers, artículos y otras novedades 
 
     <div class="bento-grid-item">
         <h3>IA Generativa</h3>
-        <a href="https://www.mkdocs.org/#plugins" target="_blank">Leer mas...</a>
+        <a href="computer-vision/segment-anything-model.md" target="_blank">Leer mas...</a>
     </div>
 
     <div class="bento-grid-item">
