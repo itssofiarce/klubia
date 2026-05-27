@@ -4,6 +4,8 @@ sidebar_title: Redes Neuronales Recurrentes Relacionales
 order: 0
 ---
 
+TEST
+
 # Redes Neuronales Recurrentes Relacionales (RMC): Mejorando el Razonamiento en la Memoria
 
 Las redes neuronales con memoria han sido un pilar fundamental en el modelado de datos temporales, permitiendo a los sistemas recordar información durante largos periodos. Sin embargo, una pregunta clave ha persistido: ¿pueden estas arquitecturas también realizar un razonamiento relacional complejo con la información que recuerdan? El *paper* "Relational recurrent neural networks" aborda esta cuestión. Sus autores, Adam Santoro y su equipo de DeepMind, primero confirman la intuición de que las arquitecturas de memoria estándar luchan con tareas que dependen fuertemente de la comprensión de cómo las entidades se conectan. Para superar estas deficiencias, proponen una nueva unidad de memoria, el **Núcleo de Memoria Relacional (RMC)**, que emplea atención multi-cabeza de producto punto para permitir que las memorias interactúen explícitamente entre sí. Los resultados son impresionantes: el RMC muestra grandes mejoras en dominios de aprendizaje por refuerzo (como Mini PacMan), evaluación de programas y modelado de lenguaje, logrando resultados de vanguardia en conjuntos de datos como WikiText-103 y Project Gutenberg. Este trabajo subraya la importancia de considerar no solo el almacenamiento y la recuperación de información en la memoria, sino también cómo interactúan las propias memorias.

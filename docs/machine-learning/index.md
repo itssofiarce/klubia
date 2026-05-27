@@ -23,7 +23,7 @@ Este índice pretende explicar conceptos que luego en el analisis de los *papers
 
 En una sola palabra: **algoritmo**. En esencia, son una serie de reglas basadas en una colección de ejemplos de la situación a resolver, por eso, a veces escuchamos que **la calidad del contenido de los datos** es mas importante que el algoritmo en sí. 
 
-![UML Diagram](..//excalidraw/ml-diagram-02.svg)
+![UML Diagram](../assets/excalidraw/ml-diagram-02.svg)
 
 al ser fórmulas matemáticas, si mis datos son érroneos o bien o estan incompletos, esto se reflejará en el resultado de mi modelo. 
 
@@ -31,7 +31,7 @@ al ser fórmulas matemáticas, si mis datos son érroneos o bien o estan incompl
 # ¿Para qué sive *Machine Learning*?
 Bueno, es la base de todo el desarrollo de la inteligencia artificial. En el mundo moderno en el que vivimos, los datos estan por todos lados, por sí solos, no son nada mas que datos. Pongamos un ejemplo: 
 
-![UML Diagram](..//excalidraw/ml-diagram-03.svg)
+![UML Diagram](../assets/excalidraw/ml-diagram-03.svg)
 
 Tux es un estudiante, que durante su semana de examenes anotó cuántas horas estudió y la calificación obtenida. Entonces, quiere saber si el hecho de estudiar mas horas lo ayudará a mejorar sus notas. 
 
@@ -136,7 +136,7 @@ Es una lista ordenada de datos (también llamada vector) que describe un ejemplo
 Por ejemplo:
 
 
-![UML Diagram](..//excalidraw/ml-diagram-04.svg)
+![UML Diagram](../assets/excalidraw/ml-diagram-04.svg)
 
 Todos los ejemplos del conjunto de datos tienen el mismo tipo de características en el mismo orden
 ///

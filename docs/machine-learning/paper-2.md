@@ -3,6 +3,8 @@ title: Los Modelos de Lenguaje Aprenden con Pocos Ejemplos
 sidebar_title: LLMs que aprenden con pocos ejemplos 
 ---
 
+TEST
+
 # Los Modelos de Lenguaje Aprenden con Pocos Ejemplos: Un Paradigma de Aprendizaje Revolucionario
 
 El *paper* "Language Models are Few-Shot Learners", de Tom B. Brown y un vasto equipo de Google (publicado en 2020), marcó un antes y un después en el campo del Procesamiento del Lenguaje Natural (PLN). Antes de este trabajo, el enfoque predominante para entrenar modelos de lenguaje para nuevas tareas implicaba un ajuste fino extensivo (*fine-tuning*) con grandes conjuntos de datos etiquetados específicos para cada tarea. Esto era costoso en términos computacionales y de datos, lo que limitaba la adaptabilidad de los modelos. Este estudio revolucionario presentó el modelo **GPT-3** y demostró que los modelos de lenguaje a gran escala, con miles de millones de parámetros, pueden aprender tareas nuevas con una cantidad sorprendentemente pequeña de ejemplos, o incluso sin ninguno, simplemente a través de indicaciones de texto (*prompts*). Este nuevo paradigma, conocido como **aprendizaje *few-shot***, elimina la necesidad de *fine-tuning* específico de la tarea, abriendo la puerta a una flexibilidad y generalización sin precedentes en el uso de los modelos de lenguaje.
