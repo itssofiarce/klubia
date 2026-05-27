@@ -18,8 +18,7 @@ Este índice pretende explicar conceptos que luego en el análisis de los *paper
 # ¿Qué es *Machine Learning*?
 
 En una sola palabra: **algoritmo**. En esencia, son una serie de reglas basadas en una colección de ejemplos de la situación a resolver, por eso, a veces escuchamos que **la calidad del contenido de los datos** es más importante que el algoritmo en sí. 
-
-~{diagram}(../assets/excalidraw/ml-diagram-02.svg)
+#~{diagram}(../assets/excalidraw/ml-diagram-02.svg)
 
 Al ser fórmulas matemáticas, si mis datos son erróneos o están incompletos, esto se reflejará en el resultado de mi modelo. 
 
@@ -27,8 +26,7 @@ Al ser fórmulas matemáticas, si mis datos son erróneos o están incompletos, 
 # ¿Para qué sirve *Machine Learning*?
 
 Bueno, es la base de todo el desarrollo de la inteligencia artificial. En el mundo moderno en el que vivimos, los datos están por todos lados; por sí solos, no son nada más que datos. Pongamos un ejemplo: 
-
-~{diagram}(../assets/excalidraw/ml-diagram-03.svg)
+#~{diagram}(../assets/excalidraw/ml-diagram-03.svg)
 
 Tux es un estudiante que durante su semana de exámenes anotó cuántas horas estudió y la calificación obtenida. Entonces, quiere saber si el hecho de estudiar más horas lo ayudará a mejorar sus notas. 
 
@@ -88,8 +86,7 @@ Esto funciona, pero es limitado: no se pueden escribir todas las reglas posibles
 Es una lista ordenada de datos (también llamada vector) que describe un ejemplo. Cada dato en esa lista se llama característica o feature, y representa alguna propiedad del ejemplo.
 
 Por ejemplo:
-
-~{diagram}(../assets/excalidraw/ml-diagram-04.svg)
+#~{diagram}(../assets/excalidraw/ml-diagram-04.svg)
 
 Todos los ejemplos del conjunto de datos tienen el mismo tipo de características en el mismo orden.
 
@@ -97,8 +94,7 @@ Todos los ejemplos del conjunto de datos tienen el mismo tipo de característica
 ### Dimensión
 ---
 La dimensión es el número de características que tiene un vector. O sea, la cantidad de elementos que tenga mi lista. 
-
-~{diagram}(../assets/excalidraw/ml-diagram-04.svg)
+#~{diagram}(../assets/excalidraw/ml-diagram-04.svg)
 
 En el ejemplo de arriba, se dice que el vector *"tiene dimensión 3"*.
 
