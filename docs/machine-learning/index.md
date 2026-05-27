@@ -6,9 +6,6 @@ keywords: machine learning,intro,begginers
 author: arces
 order: 0
 sidebar_title: Indice
-external_links:
-  "Adicionales": http://ema.cri-info.cm/wp-content/uploads/2019/07/2019BurkovTheHundred-pageMachineLearning.pdf
-  GitHub: "https://github.com/asiffer/mkdocs-shadcn"
 ---
 
 En esta sección introduciremos el tema de "Machine Learning", qué es, para qué y por qué. 
