@@ -30,10 +30,10 @@ Tux es un estudiante que durante su semana de exámenes anotó cuántas horas es
 
 Miremos los datos:
 
-    Semana 1: 2 horas → 4
-    Semana 2: 3 horas → 5
-    Semana 3: 1 hora → 8 ← ¡este se sale de lo esperado!
-    Semana 4: 3 horas → 7
+    Semana 1: 2 horas - Nota: 4
+    Semana 2: 3 horas - Nota: 5
+    Semana 3: 1 hora - Nota: 8 [Dato atípico]
+    Semana 4: 3 horas - Nota: 7
 
 En la semana 3, estudió menos pero sacó una nota más alta. Esto nos dice que la relación no es perfectamente lineal (no siempre estudiar más = mejor nota). Puede que haya otros factores (motivación, facilidad del examen, suerte, etc.).
 
@@ -50,7 +50,7 @@ Ejemplo:
     X = Horas de estudio
     Y = Nota del examen
 
-Un modelo estadístico intenta encontrar un patrón general en los datos, aunque no siempre lo logre perfectamente. En este caso, estudiar más generalmente ayuda, pero no garantiza una mejor nota. Hay excepciones (como la semana 3), que pueden deberse a otros factores (tema del examen, estado de ánimo, etc.).
+Un modelo estadístico intenta encontrar un patrón general en los datos, aunque no siempre lo logre perfectamente. En este caso, estudiar más generalmente ayuda, pero no garantiza una mejor nota. Hay excepciones (como la semana 3), que pueden debido a otros factores (tema del examen, estado de ánimo, etc.).
 
 Ese primer modelo estadístico es el primer paso para construir sistemas inteligentes porque aprende de los datos, encuentra patrones y puede hacer predicciones. 
 
@@ -67,8 +67,8 @@ En la programación normal, tú le dices a la computadora exactamente qué hacer
 
 Ejemplo tradicional: Si estás haciendo un programa para saber si un email es spam, escribes reglas como:
 
-    Si el correo contiene "dinero rápido" → marcar como spam
-    Si el correo tiene muchos signos de exclamación → marcar como spam
+    Si el correo contiene "dinero rápido" -> marcar como spam
+    Si el correo tiene muchos signos de exclamación -> marcar como spam
 
 Esto funciona, pero es limitado: no se pueden escribir todas las reglas posibles porque algunas se contradicen. En cambio, con los modelos de machine learning, en lugar de escribir reglas, haces que la computadora aprenda por sí misma observando muchos ejemplos.
 
@@ -148,8 +148,8 @@ En este tipo de aprendizaje, el modelo interactúa con un entorno y aprende de l
 Por ejemplo:
 
     Un robot que aprende a caminar:
-        Prueba mover una pierna → se cae → recibe castigo
-        Prueba otra forma → avanza → recibe recompensa
+        Prueba mover una pierna -> se cae -> recibe castigo
+        Prueba otra forma -> avanza -> recibe recompensa
         Con el tiempo, aprende una estrategia (o política) que maximiza su éxito
 
 Este tipo de aprendizaje se usa para:
@@ -198,103 +198,3 @@ La derivada en una gráfica representa la pendiente o el cambio de un valor con 
 * Dibujar su curva
 * Dibujar una recta tangente en un punto específico
 * Mostrar cómo la pendiente (derivada) cambia
-
-<!-- 
-<div id="main" style="width: 100%; height: 400px;"></div>
-<script src="https://cdn.jsdelivr.net/npm/echarts@5.4.2/dist/echarts.min.js"></script>
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    const chart = echarts.init(document.getElementById("main"));
-    const x0 = 1.5;
-    const slope = 2 * x0;
-    const y0 = x0 * x0;
-
-    const fx = [], tangent = [];
-    for (let x = -3; x <= 3; x += 0.1) {
-      const xRounded = Math.round(x * 10) / 10;
-      fx.push([xRounded, xRounded ** 2]);
-      tangent.push([xRounded, slope * (xRounded - x0) + y0]);
-    }
-
-    chart.setOption({
-      title: { text: "f(x) = x² y su derivada", left: "center" },
-      tooltip: { trigger: "axis" },
-      xAxis: { type: "value" },
-      yAxis: { type: "value" },
-      series: [
-        { name: "f(x) = x²", type: "line", data: fx },
-        {
-          name: "Tangente",
-          type: "line",
-          data: tangent,
-          lineStyle: { type: "dashed", color: "#EF4444" }
-        }
-      ]
-    });
-  });
-</script>
--->
-
-### Gradiente
----
-El gradiente de una función con varias variables es un vector que indica en qué dirección aumenta más rápidamente la función. 
-
-Ejemplo: Si $f(x_1, x_2) = 2x_1 + 3x_2$, entonces:
-
-$$\nabla f = \left[ \frac{\partial f}{\partial x_1}, \frac{\partial f}{\partial x_2} \right] = [2, 3]$$
-
-Una analogía del mundo real sería: Estás en una colina y tienes los ojos vendados. Tocas el suelo y sientes que la tierra sube más hacia la derecha que hacia el frente. El gradiente es como una brújula que te dice: *“¡Gira hacia el noreste y camina! Allí subirás más rápido.”*
-
-
-### Clasificación 
----
-La clasificación consiste en asignar una etiqueta o clase a un dato nuevo. El conjunto de posibles etiquetas es finito (por ejemplo: "perro" o "no perro"). El objetivo es predecir a qué categoría pertenece un nuevo ejemplo.
-
-Tipos:
-
-* **Binaria:** Solo dos clases posibles (ej. enfermo/sano, spam/no spam).
-* **Multiclase:** Tres o más clases (ej. tipo de flor: iris setosa, iris versicolor, iris virginica).
-
-El modelo aprende a separar clases.
-
-
-### Regresión
----
-La regresión busca predecir un valor numérico continuo en lugar de una etiqueta.
-
-* La salida es un número real (por ejemplo, 12.5, 154.3).
-* Se usa cuando lo que queremos predecir no es una categoría, sino una cantidad (un número).
-
-El modelo aprende la relación entre variables para estimar un valor numérico.
-
-
-### Aprendizaje basado en Modelos
----
-Estos algoritmos usan los datos de entrenamiento para construir un modelo con parámetros aprendidos. Una vez que el modelo está construido, los datos de entrenamiento pueden descartarse, ya que el modelo encapsula el conocimiento aprendido.
-
-Ejemplo clásico: SVM (Support Vector Machine), donde se aprenden parámetros como $w$ y $b$.
-
-
-### Aprendizaje basado en instancias
----
-No construyen un modelo general, sino que utilizan directamente todo el conjunto de datos de entrenamiento para hacer predicciones. Aquí, los datos se usan directamente durante la predicción, no se crea un modelo simplificado.
-
-Cuando llega un nuevo ejemplo, se compara con las instancias de entrenamiento.
-
-Ejemplo popular: k-Nearest Neighbors (kNN). Para clasificar un nuevo punto, el algoritmo busca los $k$ ejemplos más cercanos en el espacio de características. La etiqueta que más se repite entre esos vecinos es la predicción.
-
-
-### Aprendizaje Superficial
----
-El modelo aprende directamente los parámetros a partir de las características originales de los datos. La mayoría de los algoritmos supervisados tradicionales son de esta categoría.
-
-Ejemplos: regresión lineal, máquinas de soporte vectorial, árboles de decisión simples.
-
-
-### Aprendizaje Profundo
---- 
-Usa redes neuronales profundas con varias capas ocultas entre la entrada y la salida. Los parámetros del modelo se aprenden a partir de las salidas intermedias de las capas anteriores, no directamente de las características originales.
-
-Esto permite aprender representaciones jerárquicas y complejas de los datos.
-
-Ejemplos: redes neuronales convolucionales (CNN), redes recurrentes (RNN), transformers.
