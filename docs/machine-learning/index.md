@@ -6,6 +6,7 @@ keywords: machine learning,intro,begginers
 author: arces
 order: 0
 sidebar_title: Indice
+
 ---
 
 En esta sección introduciremos el tema de "Machine Learning", qué es, para qué y por qué. 
@@ -198,6 +199,7 @@ La derivada en una gráfica representa la pendiente o el cambio de un valor con 
 * Dibujar una recta tangente en un punto específico
 * Mostrar cómo la pendiente (derivada) cambia
 
+<!-- 
 <div id="main" style="width: 100%; height: 400px;"></div>
 <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.2/dist/echarts.min.js"></script>
 <script>
@@ -231,7 +233,7 @@ La derivada en una gráfica representa la pendiente o el cambio de un valor con 
     });
   });
 </script>
-
+-->
 
 ### Gradiente
 ---
