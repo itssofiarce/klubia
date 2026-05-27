@@ -16,6 +16,7 @@ theme:
   sidebar_title: Navigation title
 
 
+
 # mkdocs.yml
 
 markdown_extensions:
@@ -31,8 +32,8 @@ markdown_extensions:
 
 
 plugins:
-  search:
-  excalidraw:
-    directory: assets/excalidraw
+  - awesome-pages
+  - search
+  - excalidraw
 
 
